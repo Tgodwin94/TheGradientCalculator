@@ -1,0 +1,79 @@
+#calculator {
+    margin: auto;
+    height: 525px;
+    width: 350px;
+    background-image: linear-gradient(to bottom right,red, black, gray, red, black, gray);
+    border: solid black 3px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    background-image: linear-gradient(to bottom right, grey, lightgrey, white, grey, lightgrey, white);
+    font-size: 16pt;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(1.5px);
+}
+
+#area {
+    margin: auto;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px 0px 20px 35px;
+    height: 20%;
+    width: 80%;
+    background-color: lightgray;
+    border: solid black 2px;
+    border-radius: 5%;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#buttons {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px;
+    height: 80%;
+    width: 100%;
+}
+
+.operator {
+    background-image: linear-gradient(to bottom right, darkorange, orange, yellow, darkorange, orange, yellow);
+}
+
+#equals {
+    background-image: linear-gradient(to bottom right, black, rgb(100, 100, 100), black, rgb(100, 100, 100));
+    color: white;
+}
+
+button:last-child {
+    margin-left: 150%;
+}
+
+#text {
+    position: absolute;
+    margin: 225px 0px 0px 0px;
+    font-size: 32pt;
+    transform: rotate(-15deg);
+    background: -webkit-linear-gradient(black, red, darkorange, black, red, darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: 900;
+}
+
+body {
+    background-color: rgb(175, 175, 175);
+}
